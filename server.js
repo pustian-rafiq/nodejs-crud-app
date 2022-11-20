@@ -31,6 +31,9 @@ app.get('/', (req,res) => {
 app.get('/add-user', (req,res) => {
     res.render('add_user');
 });
+app.get('/update-user', (req,res) => {
+    res.render('update_user');
+});
 
 
 //Listen the server
