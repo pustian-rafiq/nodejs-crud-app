@@ -26,7 +26,10 @@ app.use('/image',express.static(path.resolve(__dirname,"assets/image")));
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")));
 
 app.get('/', (req,res) => {
-    res.send("Nodejs CRUD Application");
+    res.render('index');
+});
+app.get('/add-user', (req,res) => {
+    res.render('add_user');
 });
 
 
